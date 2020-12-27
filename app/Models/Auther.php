@@ -8,4 +8,10 @@ use Illuminate\Database\Eloquent\Model;
 class Auther extends Model
 {
     use HasFactory;
+    protected $fillable = ['name' , 'family' , 'birthday'];
+
+    public function book()
+    {
+        $this->hasMany(Book::class);
+    }
 }
