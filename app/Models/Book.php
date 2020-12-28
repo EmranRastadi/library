@@ -17,7 +17,7 @@ class Book extends Model
 
     public function cats()
     {
-        return $this->belongsToMany(Cat::class , 'book_cat' , 'book_id' , 'cat_id');
+        return $this->belongsToMany(Cat::class);
     }
 
     public function student(){

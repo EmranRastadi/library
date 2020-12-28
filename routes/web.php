@@ -15,6 +15,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::get('/' ,function (){
+    return view('panel/welcome');
+});
+Route::get('/login' ,function (){
+    return view('panel/login');
+});
+
 Route::group(['namespace' => 'User' , 'prefix' => 'user'], function () {
     Route::get('/', function () {
         return view('panel/index');

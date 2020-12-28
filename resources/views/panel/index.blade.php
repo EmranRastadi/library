@@ -28,6 +28,12 @@
             <div class="container">
                 <div class="row">
                     <div class="col-12">
+                        <input class="form-control" type="text" name="search" placeholder="enter book name for search ..." />
+                    </div>
+
+                    <div class="line"></div>
+
+                    <div class="col-12">
 
 
                         <table class="table">
@@ -72,14 +78,14 @@
 
                                     <div class="modal fade" id="releaseid_1" role="dialog">
                                         <div class="modal-dialog">
-                                            <div class="modal-content">
+                                            <div class="modal-content" style="background-color:#0d1c2f !important ">
                                                 <div class="modal-header">
                                                     <h4 class="modal-title">Book name</h4>
                                                 </div>
                                                 <div class="modal-body">
                                                     <div class="container">
                                                         <div class="row">
-                                                            <form>
+                                                            <form style="width: 100%">
                                                                 <div class="col-12">
                                                                     <div class="form-group">
                                                                         <label for="date_back" class="col-form-label">returning
@@ -99,7 +105,7 @@
                                                                 </div>
 
                                                                 <div class="col-12">
-                                                                    <button class="btn btn-success">register</button>
+                                                                    <button class="btn btn-success">lending</button>
                                                                 </div>
 
                                                             </form>

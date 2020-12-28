@@ -73,3 +73,19 @@
 
 
 @endsection
+
+
+
+@section('script')
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
+            });
+
+            $('#example').modal()
+        });
+
+
+    </script>
+@endsection
