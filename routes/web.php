@@ -18,14 +18,12 @@ use Illuminate\Support\Facades\Route;
 Route::get('/' ,function (){
     return view('panel/welcome');
 });
-Route::get('/login' ,function (){
-    return view('panel/login');
-});
+
 
 Route::group(['namespace' => 'User' , 'prefix' => 'user'], function () {
-    Route::get('/', function () {
-        return view('panel/index');
-    });
+    Route::get("/" , [BookController::class , 'index'])->name('index');
+    Route::get("/lending" , [BookController::class , 'lending'])->name('lending');
+
     Route::get('/add-book', function () {
         return view('panel/addBook');
     })->name('addBook');
@@ -33,5 +31,4 @@ Route::group(['namespace' => 'User' , 'prefix' => 'user'], function () {
         return view('panel/addAuther');
     });
     Route::get("/login", [AuthController::class, 'login'])->name('login');
-    Route::post("/register", [AuthController::class, 'register'])->name('register');
 });

@@ -30,6 +30,7 @@ class BookFactory extends Factory
             'name' => $this->faker->name,
             'auther_id' => $this->faker->randomElement($auther),
             'student_id' => 0,
+            'realse_time' => date('d/m/Y'),
         ];
     }
 }
